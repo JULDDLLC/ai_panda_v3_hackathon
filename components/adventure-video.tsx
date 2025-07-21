@@ -52,7 +52,7 @@ export function AdventureVideo({ pandaName }: AdventureVideoProps) {
             /* YouTube Video Thumbnail */
             <div className="absolute inset-0 flex items-center justify-center">
               <img 
-                src="https://img.youtube.com/vi/USKxuArodvI/maxresdefault.jpg"
+                src="adventure_awaits.png"
                 alt="Adventure Video Thumbnail"
                 className="w-full h-full object-cover"
               />
