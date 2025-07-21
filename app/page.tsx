@@ -22,7 +22,7 @@ export default function HomePage() {
   const [selectedMood, setSelectedMood] = useState('happy');
   const [customMessage, setCustomMessage] = useState('');
   const [pandaGreeting, setPandaGreeting] = useState('');
-  const { speak, isGenerating } = useVoice();
+  const { speak, isGenerating } = useVoice(); // isGenerating is used in this file for button disabling
 
   const getRandomGreeting = (name: string) => {
     const lines = [
@@ -231,8 +231,8 @@ export default function HomePage() {
                 Interactive 3D model - no subscription required!
               </p>
             </div>
-            {/* Moved VoiceControls outside the 3D preview card, as per user's snippet */}
-            <VoiceControls compact={true} isGenerating={isGenerating} /> 
+            {/* Removed compact and isGenerating props from VoiceControls */}
+            <VoiceControls /> 
           </motion.div>
         </div>
 
